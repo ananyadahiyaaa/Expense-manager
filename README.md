@@ -6,7 +6,7 @@ Built with a clean separation between frontend and backend, following real-world
 
 ---
 
-## ✨ Features
+## Features
 
 ### 🔐 Authentication
 - User registration & login  
@@ -56,7 +56,7 @@ expm/
 ├── docs/ # Deployment notes
 └── docker-compose.yml
 
-
+Maintained and enhanced as part of collaborative development.
 ---
 
 
