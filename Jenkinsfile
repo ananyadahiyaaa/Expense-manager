@@ -1,31 +1,16 @@
 pipeline {
     agent any
-
     stages {
-
-        stage('Checkout Code') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Build') {
             steps {
-                echo "Building application..."
+                echo 'Building...'
+                sh 'npm install'  // or whatever your build command is
             }
         }
-
         stage('Test') {
             steps {
-                echo "Running tests..."
+                echo 'Testing...'
             }
         }
-
-        stage('Deploy') {
-            steps {
-                echo "Deployment step..."
-            }
-        }
-
     }
 }
