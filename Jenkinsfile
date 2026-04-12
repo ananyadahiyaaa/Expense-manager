@@ -1,10 +1,15 @@
 pipeline {
     agent any
+
+    triggers {
+        githubPush()   // 👈 add it RIGHT HERE
+    }
+
     stages {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'npm install'  // or whatever your build command is
+                sh 'npm install'
             }
         }
         stage('Test') {
